@@ -1,8 +1,7 @@
-
 body{
     font-style: SF Pro Text,Hanken Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
-/************************* Navigation Bar ************************* /
+/************************* Navigation Bar *************************/
 
 /** Navagation Scrolled **/
 .fixed-top .scrolled{
@@ -239,4 +238,19 @@ body{
 #footer .row .col-sm-12 .footer-info a{
     text-decoration: none;
     color: #212529;
+}
+
+/************************* Responsive *************************/
+
+/********* For tablet device *********/
+
+@media (max-width: 1280px){
+    #resume .row .col-sm-7{
+       max-width: 83.33333333333333%;
+       flex: 0 0 100%;
+    }
+
+    #resume .row .col-sm-2{
+        display: none;
+    }   
 }
