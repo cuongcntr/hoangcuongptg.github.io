@@ -244,10 +244,14 @@ body{
 
 /********* For tablet device *********/
 
-@media (max-width: 1280px){
+@media (max-width: 1024px){
     #resume .row .col-sm-7{
        max-width: 83.33333333333333%;
        flex: 0 0 100%;
+    }
+
+    #resume .row .col-sm-7 #introduction p a{
+        display: inline-block!important;
     }
 
     #resume .row .col-sm-2{
