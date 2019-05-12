@@ -19,12 +19,44 @@ body {
 }
 
 #welcome #option svg{
-    width: 150px; 
-    height: 150px;
+    width: 200px; 
+    height: 200px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#welcome #option svg .eyebrow:hover #left-eyebrow{
+    transform: translateY(2px);
+}
+
+#welcome #option svg .eyebrow:hover #right-eyebrow{
+    transform: translateY(-4px);
+}
+
+#welcome #option svg .left-eye{
+    -webkit-animation: closeEye 6s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation: closeEye 6s;
+    animation-iteration-count: infinite;
+}
+
+#welcome #option svg .right-eye{
+    -webkit-animation: closeEye infinite;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation: closeEye infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes closeEye{
+    95% {transform-origin: 50% 50% 0px; transform: scaleY(1);}
+    100% {transform-origin: 50% 50% 0px; transform: scaleY(0.1);}
+}
+
+@keyframes closeEye {
+    95% {transform-origin: 50% 50% 0px; transform: scaleY(1);}
+    100% {transform-origin: 50% 50% 0px; transform: scaleY(0.1);}
 }
 
 /** h1 animation text**/
@@ -59,10 +91,6 @@ body {
 #welcome #option a:hover{
     color: #FFFFFF;
     text-decoration: underline;
-}
-
-#welcome #option .hvr-shutter-in-vertical{
-    
 }
 
 #welcome #option .btn-option-left{
