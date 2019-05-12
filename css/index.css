@@ -18,6 +18,15 @@ body {
     justify-content: center; 
 }
 
+#welcome #option svg{
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /** h1 animation text**/
 #welcome #option h1{
     white-space: nowrap;
@@ -45,12 +54,11 @@ body {
 
 #welcome #option a{
     color: #111111;
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
 }
 
 #welcome #option a:hover{
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 #welcome #option .hvr-shutter-in-vertical{
@@ -59,13 +67,13 @@ body {
 
 #welcome #option .btn-option-left{
     margin-left: 25px;
-    background-color: #AAAAAA;
+    background-color: #111111;
     text-decoration: none;
 }
 
 #welcome #option .btn-option-right{
     margin-right: 25px;
-    background-color: #AAAAAA;
+    background-color: #111111;
     text-decoration: none;
     float: right;
 }
