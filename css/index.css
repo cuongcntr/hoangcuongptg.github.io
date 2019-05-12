@@ -88,6 +88,11 @@ body {
     color: #111111;
 }
 
+#welcome #option .hvr-shutter-in-vertical::before{
+    background: #FFFFFF!important;
+    border-radius: 4px;
+}
+
 #welcome #option a:hover{
     color: #FFFFFF;
     text-decoration: underline;
