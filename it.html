@@ -22,7 +22,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/it.css">
+    <link rel="stylesheet" type="text/css" href="css/abc.css">
     <link rel="stylesheet" media="all" href="css/hover/hover.css">
 
     <!-- JavaScript -->
@@ -31,407 +31,469 @@
   </head>
 
   <!-- The scrollable area -->
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" style="font-weight: 400; letter-spacing: 0.02em; line-height: 1.8;">
-
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">    
         <!-- Navigation Bar --> 
-        <nav class="navbar navbar-expand-sm fixed-top" style="font-family: Lato, Helvetica, sans-serif; background-color: #212529;">
-            <a class="navbar-brand" href="index.html" style="font-size: 1rem; line-height: 1.5; color: #ffffff;">L. M. Cuong Hoang</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">Resume</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#introduction">Introduction</a>
-                            <a class="dropdown-item" href="#skills">Skills</a>
-                            <a class="dropdown-item" href="#experience">Experience</a>
-                            <a class="dropdown-item" href="#education">Education</a>
-                        </div>
+        <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">  
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: #ffffff;">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                 </ul>
-            </div>
         </nav>
-
-        <!--Section Resume-->
-        <div id="resume" class="container-fluid">
-
-            <!-- Left Side Introduction & Skills-->
+        
+        <!-- Section Introduction -->
+        <div id="introduction" class="container-fluid">
             <div class="row">
-                <div class="col-sm-7" style="margin-left: calc(100%/12);">
-                    <!-- Introduction -->
-                    <div id="introduction">
-                        <h1>Hey there, I'm <span style="color:#63B8FF;">Cuong Hoang.</span><br>
-                            Nice to meet ya!
-                        </h1>
-                        <p>I'm a Vietnamese student in Finland, and almost graduated in information technology at Centria University of Applied Sciences.
-                            My passion are design, and being aimed at UX/UI design, interaction design, prototyping and developing website.
-                            <a href="#about" class="font-italic" style="color:#63B8FF; display: none;">MORE HERE!</a>
+                <div class="col-sm-12">
+                    <h1>UX/UI Designer & Front-end Web Developer</h1>
+                    <h2>I love designing & coding beautiful simple things.</h2>
+                    <blockquote>
+                        <p>
+                            My name is Cuong Hoang, and I am a Vietnamese student in Finland. After nearly 4 years studied IT and almost graduated at 
+                            Centria University of Applied Sciences, I found out my passion of my life - creation. My career is aimmng at
+                            UX/UI design, interaction design, prototyping and developing website that encouraged my creativity.  
                         </p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Skills -->
+        <div id="skills" class="container-fluid">
+            <h1>Skills</h1>
+            <div class="row">
+                <!-- Tech Skills -->
+                <div class="col-sm-5">
+                    <h2>Tech Skills</h2>   
+                    <div class="webSkills">
+                        <img src="img/skills/html5.svg" alt="html5 logo">
+                        <img src="img/skills/css3.svg" alt="css3 logo">
+                        <img src="img/skills/js-square.svg" alt="js logo">
+                        <img src="img/skills/bootstrap.svg" alt="bootstrap logo">
+                        <img src="img/skills/jquery.svg" alt="jquery logo">
+                        <img src="img/skills/react.svg" alt="react logo">
+                        <img src="img/skills/github-square.svg" alt="github logo">
                     </div>
-
-                    <!-- Skills -->
-                    <div id="skills" style="margin-top: 4rem;">
-
-                        <!-- Programming Skills-->
-                        <div class="programmingSkills" style="width: 50%; float: left;">
-                            <h2>Skills</h2>
-                            <div class="webSkills">
-                                <img src="img/skills/html5.svg" alt="html5 logo">
-                                <img src="img/skills/css3.svg" alt="css3 logo">
-                                <img src="img/skills/js-square.svg" alt="js logo">
-                                <img src="img/skills/bootstrap.svg" alt="bootstrap logo">
-                                <img src="img/skills/jquery.svg" alt="jquery logo">
-                                <img src="img/skills/react.svg" alt="react logo">
-                                <img src="img/skills/github-square.svg" alt="github logo">
-                            </div>
-                            <div class="adobeSkills">
-                                <img src="img/skills/adobe-photoshop.svg" alt="adobe-photoshop logo">
-                                <img src="img/skills/adobe-illustrator.svg" alt="adobe-illustrator logo">
-                                <img src="img/skills/adobe-lightroom.svg" alt="adobe-lightroom logo">
-                                <img src="img/skills/adobe-xd.svg" alt="adobe-xd logo">
-                            </div>
-                        </div>
-
-                        <!-- Language Skills-->
-                        <div class="languageSkills" style="width: 50%; float: right;">
-                            <h2>Language Skills</h2>
-                            <div>
-                                <p class="titleLanguage">Vietnamese</p><!--
-                                --><p class="titleLanguage">English</p><!--
-                                --><p class="titleLanguage">Finnish</p>
-                            </div>
-                            <div class="chart">
-                                <canvas id="languageVietnamese"></canvas>
-                            </div><!--
-                            --><div class="chart">
-                                <canvas id="languageEnglish"></canvas>
-                            </div><!--
-                            --><div class="chart">
-                                <canvas id="languageFinnish"></canvas>
-                            </div>
-                            <!-- Chartjs Code -->
-                            <script>
-                                var vietnamese = document.getElementById('languageVietnamese').getContext('2d');
-                                var english = document.getElementById('languageEnglish').getContext('2d');
-                                var finnish = document.getElementById('languageFinnish').getContext('2d');
-
-                                var chartVietnamese = new Chart(vietnamese, {
-                                    /** Chart type **/
-                                    type: 'doughnut',
-                                    /** Chart data **/
-                                    data: {
-                                        datasets: [{
-                                            data:[100,0],
-
-                                            backgroundColor: ['#63B8FF','#FFFFFF']
-                                        }],
-
-                                    },
-
-                                    options: {
-                                        responsive: true,
-                                        maintainAspectRatio: false,
-                                        cutoutPercentage: 80,
-                                        animation: {
-                                            animateScale: true
-                                        },
-                                        tooltips: {
-                                            callbacks: {
-                                                label: function(tooltipItem, data) {
-                                                //get the concerned dataset
-                                                var dataset = data.datasets[tooltipItem.datasetIndex];
-                                                //calculate the total of this data set
-                                                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                                                    return previousValue + currentValue;
-                                                });
-                                                //get the current items value
-                                                var currentValue = dataset.data[tooltipItem.index];
-                                                //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
-                                                var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-
-                                                return percentage + "%";
-                                                }
-                                            }
-                                        } 
-                                    }
-                                });
-
-                                var chartEnglish = new Chart(english, {
-                                    /** Chart type **/
-                                    type: 'doughnut',
-
-                                    /** Chart data **/
-                                    data: {
-                                        datasets: [{
-                                            data:[90,10],
-
-                                            backgroundColor: ['#63B8FF','#FFFFFF']
-                                        }],
-
-                                    },
-
-                                    options: {
-                                        responsive: true,
-                                        maintainAspectRatio: false,
-                                        cutoutPercentage: 80,
-                                        animation: {
-                                            animateScale: true 
-                                        },
-                                        tooltips: {
-                                            callbacks: {
-                                                label: function(tooltipItem, data) {
-                                                //get the concerned dataset
-                                                var dataset = data.datasets[tooltipItem.datasetIndex];
-                                                //calculate the total of this data set
-                                                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                                                    return previousValue + currentValue;
-                                                });
-                                                //get the current items value
-                                                var currentValue = dataset.data[tooltipItem.index];
-                                                //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
-                                                var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-
-                                                return percentage + "%";
-                                                }
-                                            }
-                                        }   
-                                    }
-                                });
-
-                                var chartFinnish = new Chart(finnish, {
-                                    /** Chart type **/
-                                    type: 'doughnut',
-
-                                    /** Chart data **/
-                                    data: {
-                                        datasets: [{
-                                            data:[25,75],
-
-                                            backgroundColor: ['#63B8FF','#FFFFFF'],
-
-                                        }],
-
-                                    },
-
-                                    options: {
-                                        responsive: true,
-                                        maintainAspectRatio: false,
-                                        cutoutPercentage: 80,
-                                        animation: {
-                                            animateScale: true
-                                        },
-                                        tooltips: {
-                                            callbacks: {
-                                                label: function(tooltipItem, data) {
-                                                //get the concerned dataset
-                                                var dataset = data.datasets[tooltipItem.datasetIndex];
-                                                //calculate the total of this data set
-                                                var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                                                    return previousValue + currentValue;
-                                                });
-                                                //get the current items value
-                                                var currentValue = dataset.data[tooltipItem.index];
-                                                //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
-                                                var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-
-                                                return percentage + "%";
-                                                }
-                                            }
-                                        } 
-                                    }
-                                });
-                            </script>
-                        </div>
+                    <div class="adobeSkills">
+                        <img src="img/skills/adobe-photoshop.svg" alt="adobe-photoshop logo">
+                        <img src="img/skills/adobe-illustrator.svg" alt="adobe-illustrator logo">
+                        <img src="img/skills/adobe-lightroom.svg" alt="adobe-lightroom logo">
+                        <img src="img/skills/adobe-xd.svg" alt="adobe-xd logo">
                     </div>
                 </div>
-
-                <!-- Right Side Introduction-->
-                <div class="col-sm-2" style="margin-left: calc(100%/12); margin-right: calc(100%/12);">
-                    <img class="img-fluid float-right img-thumbnail" src="img/about/profile1.png" alt="profile picture" style="margin: 0.5rem 0 0.5rem 0.5rem; width: 6rem;">
-                    <p style="font-weight: 400">After nearly 4 years studied in Finland, I found out my passion of my life: creation. UX/UI design, interaction design, prototyping
-                       and developing website, which are encouraged my creativity,...<br>
-                       <a href="#about" class="font-italic" style="color:#63B8FF;">MORE HERE!</a>
-                    </p>
-                    <div class="icon" style="border-top: 0.5px outset #D3D3D3; padding-top: 1rem;">
-                        <a href="https://www.facebook.com/hoangcuong260297" target="_blank"><i class="fab fa-facebook-square text-body" style="margin-left: 0;"></i></a>
-                        <a href="https://www.instagram.com/manhcuong_izme" target="_blank"><i class="fab fa-instagram text-body"></i></a>
-                        <a href="https://www.linkedin.com/in/hoangcuong260297" target="_blank"><i class="fab fa-linkedin text-body"></i></a> 
-                        <a href="https://github.com/cuongcntr" target="_blank"><i class="fab fa-git-square text-body"></i></a>         
+                <!-- Language Skills-->
+                <div class="col-sm-5">
+                    <h2>Language Skills</h2>   
+                    <div>
+                    <p class="titleLanguage">Vietnamese</p><!--
+                    --><p class="titleLanguage">English</p><!--
+                    --><p class="titleLanguage">Finnish</p>
+                    </div>     
+                    <div class="chart">
+                        <canvas id="languageVietnamese"></canvas>
+                    </div><!--
+                    --><div class="chart">
+                        <canvas id="languageEnglish"></canvas>
+                    </div><!--
+                    --><div class="chart">
+                        <canvas id="languageFinnish"></canvas>
                     </div>
+                            <!-- Chartjs Code -->
+                            <script>
+                                    var vietnamese = document.getElementById('languageVietnamese').getContext('2d');
+                                    var english = document.getElementById('languageEnglish').getContext('2d');
+                                    var finnish = document.getElementById('languageFinnish').getContext('2d');
+    
+                                    var chartVietnamese = new Chart(vietnamese, {
+                                        /** Chart type **/
+                                        type: 'doughnut',
+                                        /** Chart data **/
+                                        data: {
+                                            datasets: [{
+                                                data:[100,0],
+    
+                                                backgroundColor: ['#A9A9A9','#FFFFFF']
+                                            }],
+    
+                                        },
+    
+                                        options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            cutoutPercentage: 80,
+                                            animation: {
+                                                animateScale: true
+                                            },
+                                            tooltips: {
+                                                callbacks: {
+                                                    label: function(tooltipItem, data) {
+                                                    //get the concerned dataset
+                                                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                                                    //calculate the total of this data set
+                                                    var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                                        return previousValue + currentValue;
+                                                    });
+                                                    //get the current items value
+                                                    var currentValue = dataset.data[tooltipItem.index];
+                                                    //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
+                                                    var percentage = Math.floor(((currentValue/total) * 100)+0.5);
+    
+                                                    return percentage + "%";
+                                                    }
+                                                }
+                                            } 
+                                        }
+                                    });
+    
+                                    var chartEnglish = new Chart(english, {
+                                        /** Chart type **/
+                                        type: 'doughnut',
+    
+                                        /** Chart data **/
+                                        data: {
+                                            datasets: [{
+                                                data:[90,10],
+    
+                                                backgroundColor: ['#A9A9A9','#FFFFFF']
+                                            }],
+    
+                                        },
+    
+                                        options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            cutoutPercentage: 80,
+                                            animation: {
+                                                animateScale: true 
+                                            },
+                                            tooltips: {
+                                                callbacks: {
+                                                    label: function(tooltipItem, data) {
+                                                    //get the concerned dataset
+                                                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                                                    //calculate the total of this data set
+                                                    var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                                        return previousValue + currentValue;
+                                                    });
+                                                    //get the current items value
+                                                    var currentValue = dataset.data[tooltipItem.index];
+                                                    //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
+                                                    var percentage = Math.floor(((currentValue/total) * 100)+0.5);
+    
+                                                    return percentage + "%";
+                                                    }
+                                                }
+                                            }   
+                                        }
+                                    });
+    
+                                    var chartFinnish = new Chart(finnish, {
+                                        /** Chart type **/
+                                        type: 'doughnut',
+    
+                                        /** Chart data **/
+                                        data: {
+                                            datasets: [{
+                                                data:[25,75],
+    
+                                                backgroundColor: ['#A9A9A9','#FFFFFF'],
+    
+                                            }],
+    
+                                        },
+    
+                                        options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            cutoutPercentage: 80,
+                                            animation: {
+                                                animateScale: true
+                                            },
+                                            tooltips: {
+                                                callbacks: {
+                                                    label: function(tooltipItem, data) {
+                                                    //get the concerned dataset
+                                                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                                                    //calculate the total of this data set
+                                                    var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                                        return previousValue + currentValue;
+                                                    });
+                                                    //get the current items value
+                                                    var currentValue = dataset.data[tooltipItem.index];
+                                                    //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
+                                                    var percentage = Math.floor(((currentValue/total) * 100)+0.5);
+    
+                                                    return percentage + "%";
+                                                    }
+                                                }
+                                            } 
+                                        }
+                                    });
+                            </script>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="img/it-skills.svg">
                 </div>
             </div>
         </div>
 
         <!-- Section Experience -->
-        <div id="experience" class="container-fluid">
-            <h2>Experience</h2>
-            <div class="slideshow">
-                <div class="mySlides">
-                    <div class="row">
-                        <div class="col-sm-6" >
-                            <h4>Teaching Assistance</h4>
-                            <p class="description">My task was supporting teacher in web development course included HTML, CSS, JavaScript, PHP (writing materials, exercises, and tutoring).
-                                <span class="more"><a class="hvr-bubble-float-left" style="background-color: #e1e1e1;" href="https://github.com/cuongcntr/WebDevMaterials.git" target="_blank">Click here to see my materials.</a></span>
-                            </p>
-                            <p class="references"><span style="text-decoration: underline;">References:</span> <br> 
-                                                Kauko Kolehmainen <br> 
-                                                Teacher in Centria University of Applied Sciences <br>
-                                                Mobile: <a href="tel:+358447250326" >+358 44 725 0326</a> | E-mail: <a href="mailto:kauko.kolehmainen@centria.fi">kauko.kolehmainen@centria.fi</a>
-                            </p>
+        <div id="experience" class="container">
+            <h1>Experience</h1>
+            <div class="container py-2">                     
+                <div class="container py-2">
+                    <!-- timeline item 1 -->
+                    <div class="row no-gutters">
+                        <div class="col-sm"> <!--spacer--> </div>
+                        <!-- timeline item 1 center dot -->
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="time">Centria University of Applied Sciences | Sep 2018 - Dec 2018</p>
+                        <!-- timeline item 1 event content -->
+                        <div class="col-sm py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-right text-muted small">Sep 2018 - Dec 2018</div>
+                                    <h4 class="card-title text-muted">Teaching Assistance <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
+                                    <p class="card-text">My task was supporting teacher in web development course included HTML, CSS, JavaScript, PHP (writing materials, exercises, and tutoring). </p>
+                                    <p class="card-text"><span style="text-decoration: underline;">References:</span> <br>
+                                        Kauko Kolehmainen <br> 
+                                        Teacher at Centria University of Applied Sciences <br>
+                                        Mobile: <a style="color:#6c757d" href="tel:+358447250326" >+358 44 725 0326</a> <br> E-mail: <a style="color:#6c757d" href="mailto:kauko.kolehmainen@centria.fi">kauko.kolehmainen@centria.fi</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div> 
-                </div>
-                <div class="mySlides hide">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h4>Front-end Web Developer</h4>
-                            <p class="description">This project was re-designing and improving a hair salon project. I also worked with 2 other business students from Laurea University to learn how to manage a project. <br>
-                                                   In this project, I re-designed the website layout and worked with HTML5, CSS3, JavaScript, jQuery.  
-                            </p>
-                            <p class="references"><span style="text-decoration: underline;">References:</span> <br>
-                                                Kauko Kolehmainen <br> 
-                                                Teacher in Centria University of Applied Sciences <br>
-                                                Mobile: <a href="tel:+358447250326" >+358 44 725 0326</a> | E-mail: <a href="mailto:kauko.kolehmainen@centria.fi">kauko.kolehmainen@centria.fi</a>
-                            </p>
+                    </div>
+                    <!--/row-->
+                    <!-- timeline item 2 -->
+                    <div class="row no-gutters">
+                        <div class="col-sm py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-right text-muted small">Feb 2018 - Apr 2018</div>
+                                    <h4 class="card-title text-muted">Front-end Web Developer <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
+                                    <p class="card-text">This project was re-designing and improving a hair salon project. I also worked with 2 other business students from Laurea University of Applied Sciences to 
+                                                         learn how to manage a project. <br> In this project, I re-designed the website layout and worked with HTML5, CSS3, JavaScript, jQuery. 
+                                    </p>
+                                    <p class="card-text"><span style="text-decoration: underline;">References:</span> <br>
+                                        Kauko Kolehmainen <br> 
+                                        Teacher at Centria University of Applied Sciences <br>
+                                        Mobile: <a style="color:#6c757d" href="tel:+358447250326" >+358 44 725 0326</a> <br> E-mail: <a style="color:#6c757d" href="mailto:kauko.kolehmainen@centria.fi">kauko.kolehmainen@centria.fi</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="time">Centria University of Applied Sciences | Feb 2018 - Apr 2018</p>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                    </div>    
-                </div>
-                <div class="mySlides hide">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h4>Finland Team Leader</h4>
-                            <p class="description">I represented for the Finland booth to introduce, present about Finland (education, culture, life) and help other students who want to study aboard in Finland in the future.
-                                <span class="more"><a class="hvr-bubble-float-left" style="background-color: #e1e1e1;" href="https://www.facebook.com/pg/vungtauasa/photos/?tab=album&album_id=692876827530908" target="_blank">Click here to see more.</a></span>
-                            </p>
+                        <div class="col-sm"> <!--spacer--> </div>
+                    </div>
+                    <!--/row-->
+                    <!-- timeline item 3 -->
+                    <div class="row no-gutters">
+                        <div class="col-sm"> <!--spacer--> </div>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="time">Vung Tau Abroad Students Association | Jul 2016 - Sep 2016</p>
+                        <div class="col-sm py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-right text-muted small">Jul 2016 - Sep 2016</div>
+                                    <h4 class="card-title text-muted">Finland Team Leader <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
+                                    <p>I represented for the Finland booth to introduce, present about Finland (education, culture, life) and help other students who want to study aboard in Finland in the future.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>  
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <img src="img/certificate/VTASA.png" alt="vtasa certificate1">
+                    </div>
+                    <!--/row-->
+                    <!-- timeline item 4 -->
+                    <div class="row no-gutters">
+                        <div class="col-sm py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-right text-muted small">Jul 2016 - Sep 2016</div>
+                                    <h4 class="card-title text-muted">Member of cooking team <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
+                                    <p>Prepared foods and drinks for the studying aboard workshop in Vung Tau.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>     
-                </div>
-                <div class="mySlides hide">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h4>Member of cooking team</h4>
-                            <p class="description">Prepared foods and drinks for the studying aboard workshop in Vung Tau.
-                                <span class="more"><a class="hvr-bubble-float-left" style="background-color: #e1e1e1;" href="https://www.facebook.com/pg/vungtauasa/photos/?tab=album&album_id=692876827530908" target="_blank">Click here to see more.</a></span>
-                            </p>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="time">Vung Tau Abroad Students Association | Jul 2016 - Sep 2016</p>
-                        </div>
-                    </div> 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <img src="img/certificate/VTASA2.png" alt="vtasa certificate2">
-                        </div>
-                    </div>       
+                        <div class="col-sm"> <!--spacer--> </div>
+                    </div>
+                    <!--/row-->
                 </div>
-            </div>
-            
-            <div class="slide-navigation">
-                <label class="bar" onclick="currentSlide(0)"></label><!--
-                --><label class="bar" onclick="currentSlide(1)"></label><!--
-                --><label class="bar" onclick="currentSlide(2)"></label><!--
-                --><label class="bar" onclick="currentSlide(3)"></label>              
-            </div>    
-
-            <script>
-                function currentSlide(n){
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var nOfSlides = slides.length;
-                    
-                    for(i = 0; i < nOfSlides ; i++){
-                        if(i != n){
-                            slides[i].classList.add("hide");
-                        }
-                        else{
-                            slides[i].classList.remove("hide");
-                        }    
-                    }
-                }
-            </script>
-        </div>
-
-        <!-- Section Education -->
-        <div id="education" class="container-fluid">
-            <h2>Education</h2>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4>Centria University of Applied Sciences</h4>
-                    <p class="description">Bachelor's degree in Information Technology.</p>
-                </div>
-                <div class="col-sm-6">
-                    <p class="time">Sep 2015 - Present</p>
-                </div>
-                <div class="col-sm-6">
-                    <h4>Mondragon University</h4>
-                    <p class="description">Exchange Program in Computer Science.</p>
-                </div>
-                <div class="col-sm-6">
-                    <p class="time">Sep 2017 - Feb 2018</p>
-                </div>
-                <div class="col-sm-6">
-                    <h4>Le Quy Don High School for Gifted Students</h4>
-                    <p class="description">High school diploma.</p>
-                </div>
-                <div class="col-sm-6">
-                    <p class="time">Sep 2012 - Jun 2015</p>
-                </div>
-            </div>
         </div>
         
+        <div id="education" class="container-fluid">
+        <!-- timeline item 1 -->
+        <h1>Education</h1>
+        <div class="row">
+                <!-- timeline item 1 left dot -->
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bg-light border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <!-- timeline item 1 event content -->
+                <div class="col py-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="float-right text-muted">Sep 2015 - Present</div>
+                            <h4 class="card-title">Centria University of Applied Sciences</h4>
+                            <p class="card-text">Bachelor's degree in Information Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!--/row-->
+            <!-- timeline item 2 -->
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bg-light border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="float-right text-muted">Sep 2017 - Feb 2018</div>
+                            <h4 class="card-title">Mondragon University</h4>
+                            <p class="card-text">Exchange Program in Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 3 -->
+            <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill bg-light border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col py-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="float-right text-muted">Sep 2012 - Jun 2015</div>
+                            <h4 class="card-title">Le Quy Don High School for Gifted Students</h4>
+                            <p class="card-text">High school diploma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--container-->
+        </div>
+
         <!-- Section About -->
         <div id="about" class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 left">
-                    <img class="img-thumbnail" src="img/about/profile2.png" alt="profile picture">
-                </div>
-                <div class="col-sm-4 right">
-                    <p class="about-header" style="font-family: Lato, Helvetica, sans-serif;">ABOUT ME</p>
-                    <p class="about-introduction">My name is Cuong Hoang, a junior UX/UI designer and front-end web developer in Finland.
-                                I enjoy learning new things and currently teaching myself more UX/UI. Besides researching, 
-                                studying design and web development, I enjoy using my camera to capture beautiful momments around me. 
-                                In addition, editing and retouching those photos help me create high quality products and enable me to
-                                understand more about colors and gain my creativity.
-                    </p>
-                    <p class="about-tool-header" style="font-family: Lato, Helvetica, sans-serif;">MY TOOLBOX</p>
-                    <p class="about-tool">HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, Github, Adobe Photoshop, Lightroom, Illustrator, XD.</p>
+                <div class="row">
+                    <div class="col-sm-6 left">
+                        <img  src="img/about/profile2.png" alt="profile picture">
+                    </div>
+                    <div class="col-sm-4 right">
+                        <p class="about-header" style="font-family: Lato, Helvetica, sans-serif;">ABOUT ME</p>
+                        <p class="about-introduction" style="text-align: justify;">I am Cuong Hoang, a junior UX/UI designer and front-end web developer in Finland.
+                                    I enjoy learning new things and currently teaching myself more UX/UI. Besides researching, 
+                                    studying design and web development, I enjoy using my camera to capture beautiful momments around me. 
+                                    In addition, editing and retouching those photos help me create high quality products and enable me to
+                                    understand more about colors and gain my creativity.
+                        </p>
+                        <p class="about-tool-header" style="font-family: Lato, Helvetica, sans-serif;">MY TOOLBOX</p>
+                        <p class="about-tool">HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, Github, Adobe Photoshop, Lightroom, Illustrator, XD.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Footer -->
         <div id="footer" class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 icon">
-                    <a href="https://www.facebook.com/hoangcuong260297" target="_blank"><i class="fab fa-facebook-square text-body" style="margin-left: 0;"></i></a>
-                    <a href="https://www.instagram.com/manhcuong_izme" target="_blank"><i class="fab fa-instagram text-body"></i></a>
-                    <a href="https://www.linkedin.com/in/hoangcuong260297" target="_blank"><i class="fab fa-linkedin text-body"></i></a> 
-                    <a href="https://github.com/cuongcntr" target="_blank"><i class="fab fa-git-square text-body"></i></a> 
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-12">
-                    <p class="footer-info">&#64; 2019 CUONG HOANG |<a href="mailto:hoangcuong260297@gmail.com">HOANGCUONG260297@GMAIL.COM</a></p>
+                    <p class="footer-info">&#64; 2019 CUONG HOANG |<a style="color:#ffffff;" href="mailto:hoangcuong260297@gmail.com">HOANGCUONG260297@GMAIL.COM</a></p>
                 </div>
             </div>
         </div>
