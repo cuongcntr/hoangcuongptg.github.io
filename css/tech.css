@@ -16,6 +16,10 @@ html, body{
     width: 100%;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
+}
+
 .navbar-dark .navbar-nav .nav-link.active{
     border-bottom: 1px solid #ffffff;
     padding-bottom: 4px;
