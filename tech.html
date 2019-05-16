@@ -447,6 +447,32 @@
         
         <!-- Section Education -->
         <div id="education" class="container-fluid">
+        <script>
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > $("#education-right1").position().top -550) {
+                $("#education-right1").addClass('show');
+            } else {
+                $("#education-right1").removeClass('show');
+            }
+            });
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > $("#education-right2").position().top -550) {
+                $("#education-right2").addClass('show');
+            } else {
+                $("#education-right2").removeClass('show');
+            }
+            });
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > $("#education-right3").position().top -550) {
+                $("#education-right3").addClass('show');
+            } else {
+                $("#education-right3").removeClass('show');
+            }
+            });
+        </script>
+
         <!-- timeline item 1 -->
         <h1>Education</h1>
         <div class="row">
@@ -465,7 +491,7 @@
                     </div>
                 </div>
                 <!-- timeline item 1 event content -->
-                <div class="col py-2">
+                <div id="education-right1" class="col py-2">
                     <div class="card">
                         <div class="card-body">
                             <div class="float-right text-muted">Sep 2015 - Present</div>
@@ -491,7 +517,7 @@
                         <div class="col">&nbsp;</div>
                     </div>
                 </div>
-                <div class="col py-2">
+                <div id="education-right2" class="col py-2">
                     <div class="card">
                         <div class="card-body">
                             <div class="float-right text-muted">Sep 2017 - Feb 2018</div>
@@ -517,7 +543,7 @@
                         <div class="col">&nbsp;</div>
                     </div>
                 </div>
-                <div class="col py-2">
+                <div id="education-right3" class="col py-2">
                     <div class="card">
                         <div class="card-body">
                             <div class="float-right text-muted">Sep 2012 - Jun 2015</div>
