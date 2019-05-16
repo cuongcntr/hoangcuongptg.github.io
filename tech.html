@@ -271,6 +271,7 @@
                             </script>                    
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-12">
                     <img src="img/it-skills.svg">
@@ -279,6 +280,42 @@
         </div>
 
         <!-- Section Experience -->
+
+        <!-- Experience Animation -->
+        <script>   
+            $(window).scroll(function() {
+            if ($(window).scrollTop() >  $("#card-experience-right1").position().top - 450) {
+                $("#card-experience-right1").addClass('show');
+            } else {
+                $("#card-experience-right1").removeClass('show');
+            }
+            });
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() >  $("#card-experience-right2").position().top - 450) {
+                $("#card-experience-right2").addClass('show');
+            } else {
+                $("#card-experience-right2").removeClass('show');
+            }
+            });
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() >  $("#card-experience-left1").position().top - 450) {
+                $("#card-experience-left1").addClass('show');
+            } else {
+                $("#card-experience-left1").removeClass('show');
+            }
+            });
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() >  $("#card-experience-left2").position().top - 450) {
+                $("#card-experience-left2").addClass('show');
+            } else {
+                $("#card-experience-left2").removeClass('show');
+            }
+            });
+        </script>
+
         <div id="experience" class="container">
             <h1>Experience</h1>
             <div class="container py-2">                     
@@ -301,11 +338,11 @@
                             </div>
                         </div>
                         <!-- timeline item 1 event content -->
-                        <div class="col-sm py-2">
+                        <div id="card-experience-right1" class="col-sm py-2">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="float-right text-muted small">Sep 2018 - Dec 2018</div>
-                                    <h4 class="card-title text-muted">Teaching Assistance <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
+                                    <h4 class="card-title">Teaching Assistance <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
                                     <p class="card-text">My task was supporting teacher in web development course included HTML, CSS, JavaScript, PHP (writing materials, exercises, and tutoring). </p>
                                     <p class="card-text"><span style="text-decoration: underline;">References:</span> <br>
                                         Kauko Kolehmainen <br> 
@@ -319,11 +356,11 @@
                     <!--/row-->
                     <!-- timeline item 2 -->
                     <div class="row no-gutters">
-                        <div class="col-sm py-2">
+                        <div id="card-experience-left1" class="col-sm py-2">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="float-right text-muted small">Feb 2018 - Apr 2018</div>
-                                    <h4 class="card-title text-muted">Front-end Web Developer <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
+                                    <h4 class="card-title">Front-end Web Developer <br><span class="work-place" style="font-size: 14px;">Centria University of Applied Sciences</span></h4>
                                     <p class="card-text">This project was re-designing and improving a hair salon project. I also worked with 2 other business students from Laurea University of Applied Sciences to 
                                                          learn how to manage a project. <br> In this project, I re-designed the website layout and worked with HTML5, CSS3, JavaScript, jQuery. 
                                     </p>
@@ -367,11 +404,11 @@
                                 <div class="col">&nbsp;</div>
                             </div>
                         </div>
-                        <div class="col-sm py-2">
+                        <div id="card-experience-right2" class="col-sm py-2">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="float-right text-muted small">Jul 2016 - Sep 2016</div>
-                                    <h4 class="card-title text-muted">Finland Team Leader <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
+                                    <h4 class="card-title">Finland Team Leader <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
                                     <p>I represented for the Finland booth to introduce, present about Finland (education, culture, life) and help other students who want to study aboard in Finland in the future.</p>
                                 </div>
                             </div>
@@ -380,11 +417,11 @@
                     <!--/row-->
                     <!-- timeline item 4 -->
                     <div class="row no-gutters">
-                        <div class="col-sm py-2">
+                        <div id="card-experience-left2" class="col-sm py-2">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="float-right text-muted small">Jul 2016 - Sep 2016</div>
-                                    <h4 class="card-title text-muted">Member of cooking team <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
+                                    <h4 class="card-title">Member of cooking team <br><span class="work-place" style="font-size: 14px;">Vung Tau Abroad Students Association</span></h4>
                                     <p>Prepared foods and drinks for the studying aboard workshop in Vung Tau.</p>
                                 </div>
                             </div>
@@ -408,6 +445,7 @@
                 </div>
         </div>
         
+        <!-- Section Education -->
         <div id="education" class="container-fluid">
         <!-- timeline item 1 -->
         <h1>Education</h1>

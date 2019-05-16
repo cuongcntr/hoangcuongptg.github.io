@@ -226,6 +226,59 @@ html, body{
     text-align: center;
 }
 
+/* Experience Animation */
+#experience #card-experience-right1{
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .6s, 
+    opacity 1s, visibility 1s;
+    z-index: 1000;
+}
+
+#experience #card-experience-right1.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#experience #card-experience-right2{
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .6s, 
+    opacity 1s, visibility 1s;
+    z-index: 1000;
+}
+
+#experience #card-experience-right2.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#experience #card-experience-left1{
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .6s, 
+    opacity 1s, visibility 1s;
+    z-index: 1000;
+}
+
+#experience #card-experience-left1.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#experience #card-experience-left2{
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .6s, 
+    opacity 1s, visibility 1s;
+    z-index: 1000;
+}
+
+#experience #card-experience-left2.show{
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Education */
 #education{
     padding-top: 100px; 
